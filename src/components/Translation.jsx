@@ -1,8 +1,8 @@
-import React from 'react'
-import { LANGUAGES } from '../utils/presets'
+import React from 'react';
+import { LANGUAGES } from '../utils/presets';
 
 export default function Translation(props) {
-  const { textElement, toLanguage, translating, setToLanguage, generateTranslation } = props
+  const { textElement, toLanguage, translating, setToLanguage, generateTranslation } = props;
   return (
     <>
       {(textElement && !translating) && (
@@ -17,9 +17,8 @@ export default function Translation(props) {
                 <option key={key} value={value}>{key}</option>
               )
             })}
-
           </select>
-          <button onClick={generateTranslation} className='specialBtn px-3 py-2 rounded-lg text-blue-400 hover:text-blue-600 duration-200'>Translate</button>
+          <button onClick={generateTranslation} className='specialBtn px-3 py-2 rounded-lg text-indigo-700 hover:text-indigo-700/50 duration-200'>Translate</button>
         </div>
       </div>)}
     </>
